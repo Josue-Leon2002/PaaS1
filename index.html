@@ -33,18 +33,28 @@
             margin: 20px auto;
             border-radius: 10px;
         }
+        h2 {
+            color: #007acc;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
         .footer {
             text-align: center;
             margin: 20px 0;
             font-size: 0.9em;
             color: #777;
         }
+        .platform {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>¿Qué es PaaS?</h1>
-        <p>Plataforma como Servicio explicado con ilustraciones</p>
+        <p>Plataforma como Servicio explicado con ventajas y desventajas</p>
     </header>
 
     <section>
@@ -53,32 +63,85 @@
             PaaS, o Plataforma como Servicio, es un modelo de computación en la nube que proporciona a los desarrolladores un entorno completo para construir, ejecutar y administrar aplicaciones sin preocuparse por la infraestructura subyacente.
         </p>
         <img src="ruta_a_la_imagen1.jpg" alt="Ejemplo de PaaS">
-
-        <h2>¿Cómo funciona?</h2>
-        <p>
-            En PaaS, el proveedor de servicios en la nube gestiona la infraestructura (servidores, almacenamiento, redes) y también el software intermedio (middleware), lo que permite a los desarrolladores concentrarse únicamente en el desarrollo y despliegue de aplicaciones.
-        </p>
-        <img src="ruta_a_la_imagen2.jpg" alt="Diagrama de PaaS">
-
-        <h2>Ventajas de PaaS</h2>
-        <ul>
-            <li>No necesitas gestionar servidores físicos.</li>
-            <li>Escalabilidad automática según la demanda.</li>
-            <li>Acceso a herramientas y marcos preconfigurados.</li>
-            <li>Desarrollo más rápido.</li>
-        </ul>
-        <img src="ruta_a_la_imagen3.jpg" alt="Beneficios de PaaS">
     </section>
 
     <section>
-        <h2>Ejemplo de Proveedores de PaaS</h2>
-        <p>Algunos de los proveedores más conocidos de PaaS son:</p>
-        <ul>
-            <li>Heroku</li>
-            <li>Google App Engine</li>
-            <li>Microsoft Azure App Service</li>
-            <li>Red Hat OpenShift</li>
-        </ul>
+        <h2>Ventajas y Desventajas de las Principales Plataformas PaaS</h2>
+
+        <div class="platform">
+            <h3>Heroku</h3>
+            <img src="ruta_a_heroku.jpg" alt="Logo de Heroku">
+            <p>Heroku es una plataforma amigable para desarrolladores, ideal para aplicaciones pequeñas y medianas.</p>
+            <h4>Ventajas:</h4>
+            <ul>
+                <li>Fácil de usar y configurar.</li>
+                <li>Integración con Git para despliegues rápidos.</li>
+                <li>Amplio soporte para múltiples lenguajes de programación.</li>
+            </ul>
+            <h4>Desventajas:</h4>
+            <ul>
+                <li>Costos elevados para escalabilidad avanzada.</li>
+                <li>Menor control sobre configuraciones avanzadas del servidor.</li>
+            </ul>
+        </div>
+
+        <div class="platform">
+            <h3>Google App Engine</h3>
+            <img src="ruta_a_google_app_engine.jpg" alt="Logo de Google App Engine">
+            <p>Google App Engine es una plataforma de Google que permite desarrollar aplicaciones escalables.</p>
+            <h4>Ventajas:</h4>
+            <ul>
+                <li>Escalabilidad automática y robusta.</li>
+                <li>Integración con otros servicios de Google Cloud.</li>
+                <li>Ideal para aplicaciones de gran volumen de usuarios.</li>
+            </ul>
+            <h4>Desventajas:</h4>
+            <ul>
+                <li>Curva de aprendizaje pronunciada.</li>
+                <li>Altamente dependiente del ecosistema de Google.</li>
+            </ul>
+        </div>
+
+        <div class="platform">
+            <h3>Microsoft Azure App Service</h3>
+            <img src="ruta_a_azure.jpg" alt="Logo de Azure">
+            <p>Azure App Service es una plataforma de Microsoft diseñada para aplicaciones empresariales.</p>
+            <h4>Ventajas:</h4>
+            <ul>
+                <li>Integración nativa con herramientas de Microsoft (como Visual Studio).</li>
+                <li>Seguridad avanzada y soporte empresarial.</li>
+                <li>Compatibilidad con Windows y Linux.</li>
+            </ul>
+            <h4>Desventajas:</h4>
+            <ul>
+                <li>Precios elevados para proyectos pequeños.</li>
+                <li>Configuraciones avanzadas pueden ser complejas.</li>
+            </ul>
+        </div>
+
+        <div class="platform">
+            <h3>Red Hat OpenShift</h3>
+            <img src="ruta_a_openshift.jpg" alt="Logo de OpenShift">
+            <p>OpenShift es una plataforma de Red Hat ideal para aplicaciones basadas en contenedores.</p>
+            <h4>Ventajas:</h4>
+            <ul>
+                <li>Fuerte enfoque en Kubernetes y contenedores.</li>
+                <li>Control completo sobre el entorno de desarrollo.</li>
+                <li>Excelente para empresas con necesidades específicas de DevOps.</li>
+            </ul>
+            <h4>Desventajas:</h4>
+            <ul>
+                <li>Más complicado de configurar en comparación con otros PaaS.</li>
+                <li>Costos más altos para configuraciones avanzadas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Conclusión</h2>
+        <p>
+            PaaS ofrece una gran cantidad de ventajas al simplificar el desarrollo y despliegue de aplicaciones, pero la elección de la plataforma adecuada depende de las necesidades de tu proyecto, presupuesto y experiencia técnica.
+        </p>
     </section>
 
     <div class="footer">
